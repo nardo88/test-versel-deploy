@@ -45,7 +45,7 @@ function start() {
         try {
             yield mongoose_1.default.connect(mongoUrl);
             app.listen(PORT, () => {
-                console.log(`Server started on port ${PORT}`);
+                console.log(`Server started ${PORT}`);
             });
         }
         catch (e) {
