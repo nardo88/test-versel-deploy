@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@constants/*": ["./constants/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@middleware/*": ["./middleware/*"],
+      "@models/*": ["./models/*"],
+      "@routes/*": ["./routes/*"],
+      "@customTypes/*": ["./customTypes/*"]
+    },
+    "typeRoots": ["customTypes", "node_modules/@types"]
+  },
+  "exclude": ["./node_modules"]
+}
